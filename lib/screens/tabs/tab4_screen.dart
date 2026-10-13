@@ -8,7 +8,7 @@ class Tab4Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinFit • Profile'),
+        title: const Text('Win • Profile'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
