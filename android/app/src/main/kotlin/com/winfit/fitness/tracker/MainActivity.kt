@@ -1,4 +1,4 @@
-package com.arenasport.football.matchtracker
+package com.winfit.fitness.tracker
 
 import android.os.Build
 import android.os.Bundle
