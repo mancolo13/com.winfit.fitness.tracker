@@ -7,11 +7,11 @@ class Tab2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final days = [
-      {'day': 'Понедельник', 'focus': 'Жим (Грудь, Плечи, Трицепс)', 'active': true},
-      {'day': 'Вторник', 'focus': 'Тяга (Спина, Задняя дельта, Бицепс)', 'active': false},
-      {'day': 'Среда', 'focus': 'День Ног & Пресс (Квадрицепс, Икры)', 'active': false},
-      {'day': 'Четверг', 'focus': 'Восстановление & Кардио', 'active': false},
-      {'day': 'Пятница', 'focus': 'Верх тела (Гипертрофия)', 'active': false},
+      {'day': 'Monday', 'focus': 'Push (Chest, Shoulders, Triceps)', 'active': true},
+      {'day': 'Tuesday', 'focus': 'Pull (Back, Rear Delts, Biceps)', 'active': false},
+      {'day': 'Wednesday', 'focus': 'Legs & Core (Quads, Hamstrings, Calves)', 'active': false},
+      {'day': 'Thursday', 'focus': 'Active Recovery & Cardio', 'active': false},
+      {'day': 'Friday', 'focus': 'Upper Body (Hypertrophy)', 'active': false},
     ];
 
     return Scaffold(
@@ -33,14 +33,14 @@ class Tab2Screen extends StatelessWidget {
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Программа: Push / Pull / Legs Pro', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+                  Text('Program: Push / Pull / Legs Pro', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
                   SizedBox(height: 4),
-                  Text('4 тренировочных дня в неделю • Цикл 8 недель', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                  Text('4 training days/week • 8-week cycle', style: TextStyle(color: Colors.white70, fontSize: 12)),
                 ],
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Расписание тренировочного сплита', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Training Split Schedule', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...days.map((d) => Container(
               margin: const EdgeInsets.only(bottom: 10),

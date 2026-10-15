@@ -10,11 +10,11 @@ class Tab1Screen extends StatefulWidget {
 
 class _Tab1ScreenState extends State<Tab1Screen> {
   final List<Map<String, dynamic>> _exercises = [
-    {'name': 'Жим штанги лежа', 'sets': '4 подхода • 80-90 кг', 'done': true},
-    {'name': 'Жим гантелей на наклонной', 'sets': '3 подхода • 32 кг', 'done': true},
-    {'name': 'Армейский жим стоя', 'sets': '3 подхода • 50 кг', 'done': true},
-    {'name': 'Махи гантелями в стороны', 'sets': '4 подхода • 12 кг', 'done': false},
-    {'name': 'Французский жим на трицепс', 'sets': '3 подхода • 35 кг', 'done': false},
+    {'name': 'Barbell Bench Press', 'sets': '4 sets • 80-90 kg', 'done': true},
+    {'name': 'Incline Dumbbell Press', 'sets': '3 sets • 32 kg', 'done': true},
+    {'name': 'Overhead Military Press', 'sets': '3 sets • 50 kg', 'done': true},
+    {'name': 'Lateral Dumbbell Raises', 'sets': '4 sets • 12 kg', 'done': false},
+    {'name': 'Skull Crushers (Triceps)', 'sets': '3 sets • 35 kg', 'done': false},
   ];
 
   @override
@@ -41,19 +41,19 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('ТЕКУЩАЯ СЕССИЯ', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 11)),
-                      Text('⏱ 42 мин • 340 ккал', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                      Text('CURRENT SESSION', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 11)),
+                      Text('⏱ 42 min • 340 kcal', style: TextStyle(color: Colors.white70, fontSize: 12)),
                     ],
                   ),
                   SizedBox(height: 10),
-                  Text('День Жима: Грудь, Плечи, Трицепс', style: TextStyle(color: Colors.white, fontSize: 19, fontWeight: FontWeight.bold)),
+                  Text('Push Day: Chest, Shoulders, Triceps', style: TextStyle(color: Colors.white, fontSize: 19, fontWeight: FontWeight.bold)),
                   SizedBox(height: 6),
-                  Text('Целевой тоннаж: 8,400 кг • Интенсивность: 85%', style: TextStyle(color: Colors.white60, fontSize: 13)),
+                  Text('Target Volume: 8,400 kg • Intensity: 85%', style: TextStyle(color: Colors.white60, fontSize: 13)),
                 ],
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Список упражнений', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Exercise Routine', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ..._exercises.map((e) => Container(
               margin: const EdgeInsets.only(bottom: 10),
